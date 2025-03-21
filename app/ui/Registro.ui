@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>759</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QWidget" name="gridWidget" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QWidget" name="widget" native="true">
+         <property name="styleSheet">
+          <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QFrame" name="frame">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QFrame" name="frame_2">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_3">
+                <item row="2" column="0">
+                 <widget class="QTableWidget" name="tableWidget">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>250</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QTableWidget {
+    background-color: #f5f5f5; /* Fondo gris claro */
+    border: 1px solid #CCCCCC; /* Borde suave */
+    border-radius: 2px; /* Bordes redondeados */
+    font-size: 12px; /* Tamaño de fuente */
+    padding: 5px; /* Espaciado interno */
+    gridline-color: #DDDDDD; /* Color de las líneas de la cuadrícula */
+}
+
+QTableWidget::item {
+    padding: 5px; /* Espaciado de las celdas */
+    border-radius: 2px; /* Bordes redondeados en las celdas */
+}
+
+QTableWidget::item:hover {
+    background-color: #f0f0f0; /* Fondo claro al pasar el mouse */
+    color: #16344D; /* Texto azul al pasar el mouse */
+}
+
+/* Barra de desplazamiento vertical y horizontal */
+QScrollBar:vertical, QScrollBar:horizontal {
+	
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: #f5f5f5; /* Fondo gris claro */
+    width: 7px; /* Ancho de la barra vertical */
+    height: 7px; /* Alto de la barra horizontal */
+}
+
+/* Manejador de la barra de desplazamiento (el &quot;handle&quot;) */
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background-color: #16344D; /* Barra de desplazamiento en azul */
+    border-radius: 15px; /* Bordes redondeados */
+    min-height: 20px; /* Tamaño mínimo de la barra de desplazamiento vertical */
+    min-width: 20px; /* Tamaño mínimo de la barra de desplazamiento horizontal */
+}
+
+/* Efecto cuando el mouse pasa por encima del manejador */
+QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {
+    background-color: #1A4567; /* Fondo más oscuro al pasar el mouse */
+}
+
+/* Líneas de los botones de desplazamiento (arriba/abajo o izquierda/derecha) */
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    background: none; /* Quitar los botones de desplazamiento */
+}
+
+/* Flechas de los botones de desplazamiento */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical,
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+    background: none; /* Quitar las flechas */
+}
+</string>
+                  </property>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>New Row</string>
+                   </property>
+                  </row>
+                  <column>
+                   <property name="text">
+                    <string>Tipo de concesion </string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Num Expediente</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Num Documento</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Razon Social</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Num Resolucion</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Fecha Resolucion</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Fecha Comunicacion</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Caudal Otorgado</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Vigencia</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Fuente</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>PUEAA</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>New Column</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>New Column</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>New Column</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>New Column</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QFrame" name="frame_3">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>250</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <item>
+                    <spacer name="horizontalSpacer_3">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLineEdit" name="lineEdit">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>300</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 6px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 10px;
+
+	margin-right: 8px; /* Margen a la derecha de 10px */
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #ededed; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QToolButton" name="toolButton_2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>30</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>30</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">border:none;</string>
+                     </property>
+                     <property name="text">
+                      <string>...</string>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>../../assets/iconos/people.png</normaloff>../../assets/iconos/people.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>25</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="toolButtonStyle">
+                      <enum>Qt::ToolButtonTextBesideIcon</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QFrame" name="frame_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #16344D; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeaados */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border: none; /* Elimina el borde predeterminado */
+    font-size: 10px; /* Tamaño de fuente */
+    text-align: center; /* Alinea el texto a la izquierda */
+}
+
+QPushButton:hover {
+    background-color: #525C5E ; /* Color de fondo al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
+    transform: scale(1.02); /* Ligero aumento al pasar el mouse */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+QPushButton::icon {
+    padding-right: 5px; /* Espaciado entre el icono y el texto */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Actualizar</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../assets/iconos/actualizar-flecha.png</normaloff>../../assets/iconos/actualizar-flecha.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight">
+        <widget class="QPushButton" name="pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #16344D; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeaados */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border: none; /* Elimina el borde predeterminado */
+    font-size: 10px; /* Tamaño de fuente */
+    text-align: center; /* Alinea el texto a la izquierda */
+}
+
+QPushButton:hover {
+    background-color: #C2185B ; /* Color de fondo al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
+    transform: scale(1.02); /* Ligero aumento al pasar el mouse */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+QPushButton::icon {
+    padding-right: 5px; /* Espaciado entre el icono y el texto */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Borrar</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../assets/iconos/borrar.png</normaloff>../../assets/iconos/borrar.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>80</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
