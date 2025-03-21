@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>759</width>
-    <height>600</height>
+    <width>921</width>
+    <height>591</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -531,8 +531,8 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>80</width>
-           <height>27</height>
+           <width>180</width>
+           <height>40</height>
           </size>
          </property>
          <property name="cursor">
@@ -545,7 +545,7 @@
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
-    font-size: 10px; /* Tamaño de fuente */
+    font-size: 18px; /* Tamaño de fuente */
     text-align: center; /* Alinea el texto a la izquierda */
 }
 
@@ -568,6 +568,12 @@ QPushButton::icon {
           <iconset>
            <normaloff>../../assets/iconos/anadir.png</normaloff>../../assets/iconos/anadir.png</iconset>
          </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
         </widget>
        </item>
        <item alignment="Qt::AlignRight">
@@ -580,8 +586,8 @@ QPushButton::icon {
          </property>
          <property name="minimumSize">
           <size>
-           <width>80</width>
-           <height>27</height>
+           <width>180</width>
+           <height>40</height>
           </size>
          </property>
          <property name="cursor">
@@ -594,7 +600,7 @@ QPushButton::icon {
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
-    font-size: 10px; /* Tamaño de fuente */
+    font-size: 18px; /* Tamaño de fuente */
     text-align: center; /* Alinea el texto a la izquierda */
 }
 
@@ -616,6 +622,12 @@ QPushButton::icon {
          <property name="icon">
           <iconset>
            <normaloff>../../assets/iconos/guardar-el-archivo.png</normaloff>../../assets/iconos/guardar-el-archivo.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
          </property>
         </widget>
        </item>

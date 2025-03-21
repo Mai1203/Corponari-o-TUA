@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1707</width>
-    <height>892</height>
+    <width>1796</width>
+    <height>922</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -68,7 +68,7 @@ background-color: rgb(255, 255, 255);</string>
                   </property>
                   <property name="minimumSize">
                    <size>
-                    <width>1500</width>
+                    <width>1100</width>
                     <height>600</height>
                    </size>
                   </property>
@@ -249,77 +249,52 @@ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
                   </row>
                   <column>
                    <property name="text">
-                    <string>Tipo de concesion </string>
-                   </property>
-                  </column>
-                  <column>
-                   <property name="text">
                     <string>Num Expediente</string>
                    </property>
                   </column>
                   <column>
                    <property name="text">
-                    <string>Num Documento</string>
+                    <string>Fecha Control</string>
                    </property>
                   </column>
                   <column>
                    <property name="text">
-                    <string>Razon Social</string>
+                    <string>Responsable de la visita</string>
                    </property>
                   </column>
                   <column>
                    <property name="text">
-                    <string>Num Resolucion</string>
+                    <string>Observaciones</string>
                    </property>
                   </column>
                   <column>
                    <property name="text">
-                    <string>Fecha Resolucion</string>
+                    <string>Numero de ocupaciones</string>
                    </property>
                   </column>
                   <column>
                    <property name="text">
-                    <string>Fecha Comunicacion</string>
+                    <string>Largo</string>
                    </property>
                   </column>
                   <column>
                    <property name="text">
-                    <string>Caudal Otorgado</string>
+                    <string>Ancho</string>
                    </property>
                   </column>
                   <column>
                    <property name="text">
-                    <string>Vigencia</string>
+                    <string>Altura</string>
                    </property>
                   </column>
                   <column>
                    <property name="text">
-                    <string>Fuente</string>
+                    <string>Area de ocupacion</string>
                    </property>
                   </column>
                   <column>
                    <property name="text">
-                    <string>PUEAA</string>
-                   </property>
-                  </column>
-                  <column>
-                   <property name="text">
-                    <string>New Column</string>
-                   </property>
-                  </column>
-                  <column>
-                   <property name="text">
-                    <string>New Column</string>
-                   </property>
-                  </column>
-                  <column>
-                   <property name="text">
-                    <string>New Column</string>
-                   </property>
-                  </column>
-                  <column>
-                   <property name="text">
-                    <string>New Column</string>
+                    <string>Volumen</string>
                    </property>
                   </column>
                  </widget>
@@ -532,7 +507,7 @@ QLineEdit:focus {
         </spacer>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="pushButton_3">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -545,8 +520,47 @@ QLineEdit:focus {
            <height>45</height>
           </size>
          </property>
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #16344D; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border: none; /* Elimina el borde predeterminado */
+    font-size: 22px; /* Tamaño de fuente */
+    text-align: center; /* Alinea el texto a la izquierda */
+}
+
+QPushButton:hover {
+    background-color: #4C6D8C; /* Color de fondo al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
+    transform: scale(1.02); /* Ligero aumento al pasar el mouse */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+QPushButton::icon {
+    padding-right: 5px; /* Espaciado entre el icono y el texto */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Crear</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>45</height>
+          </size>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -574,19 +588,9 @@ QPushButton::icon {
          <property name="text">
           <string>Actualizar</string>
          </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>../../assets/iconos/actualizar-flecha.png</normaloff>../../assets/iconos/actualizar-flecha.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>24</width>
-           <height>24</height>
-          </size>
-         </property>
         </widget>
        </item>
-       <item alignment="Qt::AlignLeft">
+       <item>
         <widget class="QPushButton" name="pushButton">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -600,22 +604,19 @@ QPushButton::icon {
            <height>45</height>
           </size>
          </property>
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
     background-color: #16344D; /* Color de fondo */
-    border-radius: 2px; /* Bordes redondeados */
+    border-radius: 5px; /* Bordes redondeados */
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
     font-size: 22px; /* Tamaño de fuente */
-    text-align: Center; /* Alinea el texto a la izquierda */
+    text-align: center; /* Alinea el texto a la izquierda */
 }
 
 QPushButton:hover {
-    background-color: #C2185B; /* Color de fondo al pasar el mouse */
+    background-color: #C2185B ; /* Color de fondo al pasar el mouse */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
     transform: scale(1.02); /* Ligero aumento al pasar el mouse */
     transition: all 0.3s ease-in-out; /* Transición suave */
@@ -628,16 +629,6 @@ QPushButton::icon {
          </property>
          <property name="text">
           <string>Borrar</string>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>../../assets/iconos/borrar.png</normaloff>../../assets/iconos/borrar.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>24</width>
-           <height>24</height>
-          </size>
          </property>
         </widget>
        </item>

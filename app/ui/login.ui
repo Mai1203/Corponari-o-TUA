@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>300</width>
-    <height>400</height>
+    <width>500</width>
+    <height>617</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,14 +18,14 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>300</width>
-    <height>400</height>
+    <width>500</width>
+    <height>600</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>326</width>
-    <height>400</height>
+    <width>500</width>
+    <height>617</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -48,7 +48,7 @@
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignTop">
         <widget class="QLabel" name="label_7">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -58,8 +58,8 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>275</width>
-           <height>80</height>
+           <width>450</width>
+           <height>200</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -85,10 +85,26 @@
         </widget>
        </item>
        <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>30</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
         <widget class="QToolButton" name="toolButton">
          <property name="styleSheet">
           <string notr="true">border:none;
-font:10px;</string>
+font:18px;</string>
          </property>
          <property name="text">
           <string>Usuario:</string>
@@ -96,6 +112,12 @@ font:10px;</string>
          <property name="icon">
           <iconset>
            <normaloff>../../assets/iconos/user.png</normaloff>../../assets/iconos/user.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
          </property>
          <property name="toolButtonStyle">
           <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -112,8 +134,8 @@ font:10px;</string>
          </property>
          <property name="minimumSize">
           <size>
-           <width>250</width>
-           <height>35</height>
+           <width>300</width>
+           <height>40</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -130,7 +152,7 @@ font:10px;</string>
     border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
     border-radius: 0px; /* Sin bordes redondeados */
     padding: 5px; /* Espaciado interno */
-    font: 10px;
+    font: 18px;
 QLineEdit {
 
     background-color: #f5f5f5; /* Gris más claro cuando se escribe */
@@ -176,10 +198,26 @@ QLineEdit:focus {
         </widget>
        </item>
        <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
         <widget class="QToolButton" name="toolButton_2">
          <property name="styleSheet">
           <string notr="true">border:none;
-font:10px;</string>
+font:18px;</string>
          </property>
          <property name="text">
           <string>Contraseña:</string>
@@ -187,6 +225,12 @@ font:10px;</string>
          <property name="icon">
           <iconset>
            <normaloff>../../assets/iconos/padlock.png</normaloff>../../assets/iconos/padlock.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
          </property>
          <property name="toolButtonStyle">
           <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -203,8 +247,8 @@ font:10px;</string>
          </property>
          <property name="minimumSize">
           <size>
-           <width>250</width>
-           <height>35</height>
+           <width>300</width>
+           <height>40</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -221,7 +265,7 @@ font:10px;</string>
     border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
     border-radius: 0px; /* Sin bordes redondeados */
     padding: 5px; /* Espaciado interno */
-    font: 10px;
+    font: 18px;
 QLineEdit {
 
     background-color: #f5f5f5; /* Gris más claro cuando se escribe */
@@ -277,13 +321,13 @@ QLineEdit:focus {
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>30</height>
+           <height>100</height>
           </size>
          </property>
         </spacer>
        </item>
        <item alignment="Qt::AlignHCenter">
-        <widget class="QLabel" name="label">
+        <widget class="QPushButton" name="pushButton">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -293,35 +337,37 @@ QLineEdit:focus {
          <property name="minimumSize">
           <size>
            <width>180</width>
-           <height>35</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>180</width>
-           <height>35</height>
+           <height>45</height>
           </size>
          </property>
          <property name="cursor">
           <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="styleSheet">
-          <string notr="true">QLabel {
+          <string notr="true">QPushButton {
     background-color: #16344D; /* Color de fondo */
-    border-radius: 5px; /* Bordes redondeados */
-    color: white; /* Color del texto (opcional) */
-    padding: 5px; /* Espaciado interno (opcional) */
+    border-radius: 2px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border: none; /* Elimina el borde predeterminado */
+    font-size: 22px; /* Tamaño de fuente */
+    text-align: Center; /* Alinea el texto a la izquierda */
 }
 
-QLabel:hover {
-    background-color: #D9844C; /* Color de fondo al pasar el mouse (opcional) */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse (opcional) */
-    transform: scale(1.02); /* Ligero aumento al pasar el mouse (opcional) */
-    transition: all 0.3s ease-in-out; /* Transición suave (opcional) */
-}</string>
+QPushButton:hover {
+    background-color: #D9844C; /* Color de fondo al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
+    transform: scale(1.02); /* Ligero aumento al pasar el mouse */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+QPushButton::icon {
+    padding-right: 5px; /* Espaciado entre el icono y el texto */
+}
+</string>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Ingresar&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>Ingresar</string>
          </property>
         </widget>
        </item>

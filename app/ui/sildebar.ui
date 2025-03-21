@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>203</width>
-    <height>602</height>
+    <width>300</width>
+    <height>617</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,8 +18,8 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>200</width>
-    <height>300</height>
+    <width>300</width>
+    <height>600</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -29,21 +29,27 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
        <widget class="QFrame" name="frame">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
         <property name="minimumSize">
          <size>
-          <width>150</width>
-          <height>0</height>
+          <width>250</width>
+          <height>550</height>
          </size>
         </property>
         <property name="styleSheet">
@@ -67,14 +73,14 @@ border: 1px solid #d5d5d5;</string>
            </property>
            <property name="minimumSize">
             <size>
-             <width>150</width>
-             <height>60</height>
+             <width>250</width>
+             <height>100</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>150</width>
-             <height>60</height>
+             <width>250</width>
+             <height>100</height>
             </size>
            </property>
            <property name="styleSheet">
@@ -117,8 +123,8 @@ border: 1px solid #d5d5d5;</string>
            </property>
            <property name="minimumSize">
             <size>
-             <width>140</width>
-             <height>25</height>
+             <width>200</width>
+             <height>40</height>
             </size>
            </property>
            <property name="cursor">
@@ -131,7 +137,7 @@ border: 1px solid #d5d5d5;</string>
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
-    font-size: 10px; /* Tamaño de fuente */
+    font-size: 18px; /* Tamaño de fuente */
     text-align: left; /* Alinea el texto a la izquierda */
 }
 
@@ -154,6 +160,12 @@ QPushButton::icon {
             <iconset>
              <normaloff>../../assets/iconos/expediente (1).png</normaloff>../../assets/iconos/expediente (1).png</iconset>
            </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item alignment="Qt::AlignHCenter|Qt::AlignTop">
@@ -166,8 +178,8 @@ QPushButton::icon {
            </property>
            <property name="minimumSize">
             <size>
-             <width>140</width>
-             <height>25</height>
+             <width>200</width>
+             <height>40</height>
             </size>
            </property>
            <property name="cursor">
@@ -180,7 +192,7 @@ QPushButton::icon {
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
-    font-size: 10px; /* Tamaño de fuente */
+    font-size: 18px; /* Tamaño de fuente */
     text-align: left; /* Alinea el texto a la izquierda */
 }
 
@@ -203,6 +215,12 @@ QPushButton::icon {
             <iconset>
              <normaloff>../../assets/iconos/folder.png</normaloff>../../assets/iconos/folder.png</iconset>
            </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item alignment="Qt::AlignHCenter|Qt::AlignTop">
@@ -215,8 +233,8 @@ QPushButton::icon {
            </property>
            <property name="minimumSize">
             <size>
-             <width>140</width>
-             <height>25</height>
+             <width>200</width>
+             <height>40</height>
             </size>
            </property>
            <property name="cursor">
@@ -229,7 +247,7 @@ QPushButton::icon {
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
-    font-size: 10px; /* Tamaño de fuente */
+    font-size: 18px; /* Tamaño de fuente */
     text-align: left; /* Alinea el texto a la izquierda */
 }
 
@@ -254,8 +272,8 @@ QPushButton::icon {
            </property>
            <property name="iconSize">
             <size>
-             <width>12</width>
-             <height>12</height>
+             <width>24</width>
+             <height>24</height>
             </size>
            </property>
           </widget>
@@ -270,8 +288,8 @@ QPushButton::icon {
            </property>
            <property name="minimumSize">
             <size>
-             <width>140</width>
-             <height>25</height>
+             <width>200</width>
+             <height>40</height>
             </size>
            </property>
            <property name="cursor">
@@ -284,7 +302,7 @@ QPushButton::icon {
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
-    font-size: 10px; /* Tamaño de fuente */
+    font-size: 18px; /* Tamaño de fuente */
     text-align: left; /* Alinea el texto a la izquierda */
 }
 
@@ -307,9 +325,15 @@ QPushButton::icon {
             <iconset>
              <normaloff>../../assets/iconos/grafico-de-barras.png</normaloff>../../assets/iconos/grafico-de-barras.png</iconset>
            </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
           </widget>
          </item>
-         <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+         <item alignment="Qt::AlignHCenter">
           <widget class="QPushButton" name="pushButton">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -319,8 +343,8 @@ QPushButton::icon {
            </property>
            <property name="minimumSize">
             <size>
-             <width>140</width>
-             <height>25</height>
+             <width>200</width>
+             <height>40</height>
             </size>
            </property>
            <property name="cursor">
@@ -333,7 +357,7 @@ QPushButton::icon {
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
-    font-size: 10px; /* Tamaño de fuente */
+    font-size: 18px; /* Tamaño de fuente */
     text-align: left; /* Alinea el texto a la izquierda */
 }
 
@@ -356,6 +380,12 @@ QPushButton::icon {
             <iconset>
              <normaloff>../../assets/iconos/nuevo-usuario.png</normaloff>../../assets/iconos/nuevo-usuario.png</iconset>
            </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item>
@@ -369,7 +399,7 @@ QPushButton::icon {
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
-             <height>250</height>
+             <height>500</height>
             </size>
            </property>
           </spacer>
@@ -384,8 +414,8 @@ QPushButton::icon {
            </property>
            <property name="minimumSize">
             <size>
-             <width>140</width>
-             <height>30</height>
+             <width>180</width>
+             <height>45</height>
             </size>
            </property>
            <property name="cursor">
@@ -398,14 +428,12 @@ QPushButton::icon {
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
-    font-size: 10px; /* Tamaño de fuente */
-    text-align: center
-; /* Alinea el texto a la izquierda */
+    font-size: 22px; /* Tamaño de fuente */
+    text-align: Center; /* Alinea el texto a la izquierda */
 }
 
 QPushButton:hover {
     background-color: #D9844C; /* Color de fondo al pasar el mouse */
-
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
     transform: scale(1.02); /* Ligero aumento al pasar el mouse */
     transition: all 0.3s ease-in-out; /* Transición suave */
