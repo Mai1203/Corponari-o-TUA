@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1707</width>
-    <height>892</height>
+    <height>922</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -572,7 +572,7 @@ QPushButton::icon {
 </string>
          </property>
          <property name="text">
-          <string>Actualizar</string>
+          <string> Actualizar</string>
          </property>
          <property name="icon">
           <iconset>
@@ -635,8 +635,8 @@ QPushButton::icon {
          </property>
          <property name="iconSize">
           <size>
-           <width>24</width>
-           <height>24</height>
+           <width>28</width>
+           <height>28</height>
           </size>
          </property>
         </widget>

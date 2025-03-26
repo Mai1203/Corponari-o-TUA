@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1600</width>
-    <height>879</height>
+    <width>1796</width>
+    <height>922</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="sizePolicy">
@@ -23,66 +23,881 @@
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <widget class="QWidget" name="gridWidget" native="true">
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
+       <string notr="true"/>
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="0">
-        <widget class="QWidget" name="widget_2" native="true">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>900</width>
-           <height>550</height>
-          </size>
-         </property>
+        <widget class="QWidget" name="widget" native="true">
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">
+background-color: rgb(255, 255, 255);</string>
          </property>
-         <layout class="QGridLayout" name="gridLayout_3">
-          <item row="8" column="1">
-           <widget class="QLabel" name="label_12">
-            <property name="text">
-             <string/>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QFrame" name="frame">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
             </property>
-           </widget>
-          </item>
-          <item row="11" column="4" alignment="Qt::AlignRight">
-           <widget class="QPushButton" name="pushButton_2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
             </property>
-            <property name="minimumSize">
-             <size>
-              <width>180</width>
-              <height>45</height>
-             </size>
-            </property>
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton {
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QFrame" name="frame_2">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QFrame" name="frame_6">
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label">
+                     <property name="styleSheet">
+                      <string notr="true">border:none;
+font:20px;</string>
+                     </property>
+                     <property name="text">
+                      <string>Rol:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_2">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>500</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QComboBox {
+    background-color: #f5f5f5; /* Mismo fondo gris claro que el QLineEdit */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #CCCCCC; /* Borde inferior suave */
+    border-radius:2px; /* Bordes redondeados suaves */
+    padding: 5px 5px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente más elegante */
+    color: #333333; /* Texto en gris oscuro */
+    transition: all 0.3s ease; /* Transición suave */
+	
+}
+
+/* Efecto al pasar el mouse */
+QComboBox:hover {
+    border-bottom: 2px solid #16344D; /* Engrosa el borde inferior al pasar el mouse */
+    background-color: #f0f0f0; /* Cambio sutil de fondo */
+}
+
+/* Cuando el ComboBox está en foco */
+QComboBox:focus {
+    background-color: #e0e0e0; /* Gris más oscuro cuando está activo */
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+    box-shadow: 0 0 8px rgba(22, 52, 77, 0.3); /* Sombra más suave y elegante */
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+}
+
+/* Personalización del menú desplegable */
+QComboBox QAbstractItemView {
+    background-color: #f5f5f5; /* Fondo gris claro */
+    color: #333333; /* Texto gris oscuro */
+    border-radius: 5px; /* Bordes redondeados suaves */
+    selection-background-color: #16344D; /* Fondo de selección azul elegante */
+    selection-color: white; /* Texto blanco al seleccionar */
+    padding: 5px 0; /* Espaciado interno */
+    min-width: 150px; /* Ancho mínimo para una mejor apariencia */
+}
+
+/* Cambio de color cuando se pasa el mouse por una opción */
+QComboBox QAbstractItemView::item:hover {
+    background-color: #16344D; /* Fondo oscuro al pasar el mouse */
+    color: white; /* Texto blanco */
+}
+
+/* Cambio de color cuando una opción está seleccionada */
+QComboBox QAbstractItemView::item:selected {
+    background-color: #16344D; /* Mismo fondo de selección */
+    color: white; /* Texto en blanco */
+}
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Nuevo elemento</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Nuevo elemento</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Nuevo elemento</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Nuevo elemento</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_2">
+                     <property name="styleSheet">
+                      <string notr="true">border:none;
+font:20px;</string>
+                     </property>
+                     <property name="text">
+                      <string>Regional:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_3">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>500</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QComboBox {
+    background-color: #f5f5f5; /* Mismo fondo gris claro que el QLineEdit */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #CCCCCC; /* Borde inferior suave */
+    border-radius:2px; /* Bordes redondeados suaves */
+    padding: 5px 5px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente más elegante */
+    color: #333333; /* Texto en gris oscuro */
+    transition: all 0.3s ease; /* Transición suave */
+	
+}
+
+/* Efecto al pasar el mouse */
+QComboBox:hover {
+    border-bottom: 2px solid #16344D; /* Engrosa el borde inferior al pasar el mouse */
+    background-color: #f0f0f0; /* Cambio sutil de fondo */
+}
+
+/* Cuando el ComboBox está en foco */
+QComboBox:focus {
+    background-color: #e0e0e0; /* Gris más oscuro cuando está activo */
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+    box-shadow: 0 0 8px rgba(22, 52, 77, 0.3); /* Sombra más suave y elegante */
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+}
+
+/* Personalización del menú desplegable */
+QComboBox QAbstractItemView {
+    background-color: #f5f5f5; /* Fondo gris claro */
+    color: #333333; /* Texto gris oscuro */
+    border-radius: 5px; /* Bordes redondeados suaves */
+    selection-background-color: #16344D; /* Fondo de selección azul elegante */
+    selection-color: white; /* Texto blanco al seleccionar */
+    padding: 5px 0; /* Espaciado interno */
+    min-width: 150px; /* Ancho mínimo para una mejor apariencia */
+}
+
+/* Cambio de color cuando se pasa el mouse por una opción */
+QComboBox QAbstractItemView::item:hover {
+    background-color: #16344D; /* Fondo oscuro al pasar el mouse */
+    color: white; /* Texto blanco */
+}
+
+/* Cambio de color cuando una opción está seleccionada */
+QComboBox QAbstractItemView::item:selected {
+    background-color: #16344D; /* Mismo fondo de selección */
+    color: white; /* Texto en blanco */
+}
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Nuevo elemento</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Nuevo elemento</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_4">
+                     <property name="styleSheet">
+                      <string notr="true">border:none;
+font:20px;</string>
+                     </property>
+                     <property name="text">
+                      <string>Cédula:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLineEdit" name="lineEdit_5">
+                     <property name="minimumSize">
+                      <size>
+                       <width>500</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 20px;
+QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 10px;
+
+	margin-right: 8px; /* Margen a la derecha de 10px */
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_5">
+                     <property name="styleSheet">
+                      <string notr="true">border:none;
+font:20px;</string>
+                     </property>
+                     <property name="text">
+                      <string>Nombres:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLineEdit" name="lineEdit_6">
+                     <property name="minimumSize">
+                      <size>
+                       <width>500</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 20px;
+QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 10px;
+
+	margin-right: 8px; /* Margen a la derecha de 10px */
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_6">
+                     <property name="styleSheet">
+                      <string notr="true">border:none;
+font:20px;</string>
+                     </property>
+                     <property name="text">
+                      <string>Apellidos:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLineEdit" name="lineEdit_7">
+                     <property name="minimumSize">
+                      <size>
+                       <width>500</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 20px;
+QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 10px;
+
+	margin-right: 8px; /* Margen a la derecha de 10px */
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_7">
+                     <property name="styleSheet">
+                      <string notr="true">border:none;
+font:20px;</string>
+                     </property>
+                     <property name="text">
+                      <string>Correo electrónico:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLineEdit" name="lineEdit_8">
+                     <property name="minimumSize">
+                      <size>
+                       <width>500</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 20px;
+QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 10px;
+
+	margin-right: 8px; /* Margen a la derecha de 10px */
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_8">
+                     <property name="styleSheet">
+                      <string notr="true">border:none;
+font:20px;</string>
+                     </property>
+                     <property name="text">
+                      <string>Teléfono:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLineEdit" name="lineEdit_2">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>500</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 20px;
+QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 10px;
+
+	margin-right: 8px; /* Margen a la derecha de 10px */
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_3">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QCheckBox" name="checkBox">
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QCheckBox::indicator {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #000000; /* Borde negro inicial */
+    background-color: #f5f5f5; /* Gris claro */
+    border-radius: 4px;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */
+}
+
+QCheckBox::indicator:checked {
+    background-color: #16344D; /* Azul oscuro cuando está activo */
+    border: 2px solid #16344D;
+}
+
+QCheckBox {
+    color: #000000; /* Texto negro */
+    font-size: 22px; /* Letra más grande */
+    padding-left: 8px;
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>Activo</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Fixed</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>80</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_5">
+                  <property name="minimumSize">
+                   <size>
+                    <width>500</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_3">
+                   <item row="0" column="0" alignment="Qt::AlignHCenter">
+                    <widget class="QFrame" name="frame_3">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>250</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);</string>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_2">
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>500</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>300</width>
+                          <height>25</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 4px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 18px;
+QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 10px;
+
+	margin-right: 8px; /* Margen a la derecha de 10px */
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QToolButton" name="toolButton_2">
+                        <property name="minimumSize">
+                         <size>
+                          <width>45</width>
+                          <height>45</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>30</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border:none;</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset>
+                          <normaloff>../../assets/iconos/people.png</normaloff>../../assets/iconos/people.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>32</width>
+                          <height>32</height>
+                         </size>
+                        </property>
+                        <property name="toolButtonStyle">
+                         <enum>Qt::ToolButtonTextBesideIcon</enum>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QFrame" name="frame_4">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout">
+                      <item>
+                       <spacer name="horizontalSpacer">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                         <enum>QSizePolicy::Fixed</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>280</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item alignment="Qt::AlignRight">
+                       <widget class="QPushButton" name="pushButton_3">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>180</width>
+                          <height>45</height>
+                         </size>
+                        </property>
+                        <property name="cursor">
+                         <cursorShape>PointingHandCursor</cursorShape>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton {
     background-color: #16344D; /* Color de fondo */
     border-radius: 5px; /* Bordes redondeados */
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
-    font-size: 18px; /* Tamaño de fuente */
+    font-size: 22px; /* Tamaño de fuente */
     text-align: center; /* Alinea el texto a la izquierda */
 }
 
@@ -97,261 +912,102 @@ QPushButton::icon {
     padding-right: 5px; /* Espaciado entre el icono y el texto */
 }
 </string>
-            </property>
-            <property name="text">
-             <string>Crear</string>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>../../assets/iconos/anadir.png</normaloff>../../assets/iconos/anadir.png</iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>24</width>
-              <height>24</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="3" alignment="Qt::AlignHCenter">
-           <widget class="QLabel" name="label_13">
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="3" alignment="Qt::AlignHCenter">
-           <widget class="QCheckBox" name="CheckBoxEstado">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>70</width>
-              <height>25</height>
-             </size>
-            </property>
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QCheckBox {
-    font-size: 18px; /* Tamaño de fuente más elegante */
-    color: #333333; /* Texto gris oscuro */
+                        </property>
+                        <property name="text">
+                         <string> Crear</string>
+                        </property>
+                        <property name="icon">
+                         <iconset>
+                          <normaloff>../../assets/iconos/anadir.png</normaloff>../../assets/iconos/anadir.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>24</width>
+                          <height>24</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item alignment="Qt::AlignRight">
+                       <widget class="QPushButton" name="pushButton_2">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>180</width>
+                          <height>45</height>
+                         </size>
+                        </property>
+                        <property name="cursor">
+                         <cursorShape>PointingHandCursor</cursorShape>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton {
+    background-color: #16344D; /* Color de fondo */
+    border-radius: 2px; /* Bordes redondeados */
+    color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
-    border-radius: 2px; /* Bordes redondeados suaves */
-    background-color: #f5f5f5; /* Fondo gris claro */
-    transition: all 0.3s ease; /* Transición suave */
+    border: none; /* Elimina el borde predeterminado */
+    font-size: 22px; /* Tamaño de fuente */
+    text-align: Center; /* Alinea el texto a la izquierda */
 }
 
-QCheckBox::indicator {
-    border: 2px solid #CCCCCC; /* Borde suave del indicador */
-    border-radius: 3px; /* Bordes redondeados para el indicador */
-    background-color: white; /* Fondo blanco */
-    width: 12px; /* Tamaño del indicador */
-    height: 12px; /* Tamaño del indicador */
-    transition: all 0.3s ease; /* Transición suave */
+QPushButton:hover {
+    background-color: #525C5E; /* Color de fondo al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
+    transform: scale(1.02); /* Ligero aumento al pasar el mouse */
+    transition: all 0.3s ease-in-out; /* Transición suave */
 }
 
-/* Cuando el checkbox está marcado */
-QCheckBox::indicator:checked {
-    background-color: #16344D; /* Color de fondo cuando está marcado */
-    border: 2px solid #16344D; /* Borde del indicador en azul */
-}
-
-/* Efecto cuando el mouse pasa por encima */
-QCheckBox:hover {
-    background-color: #f0f0f0; /* Fondo más claro al pasar el mouse */
-    border-bottom: 2px solid #16344D; /* Engrosa solo el borde inferior */
+QPushButton::icon {
+    padding-right: 5px; /* Espaciado entre el icono y el texto */
 }
 </string>
-            </property>
-            <property name="text">
-             <string>Activo</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="4">
-           <widget class="QLabel" name="label_9">
-            <property name="styleSheet">
-             <string notr="true">border:none;
-font:18px;</string>
-            </property>
-            <property name="text">
-             <string>Correo Electronico:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QLabel" name="label_4">
-            <property name="styleSheet">
-             <string notr="true">border:none;
-font:18px;</string>
-            </property>
-            <property name="text">
-             <string>Rol:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="2" alignment="Qt::AlignLeft">
-           <widget class="QComboBox" name="ComboBoxRegional">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>300</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QComboBox {
-    background-color: #f5f5f5; /* Mismo fondo gris claro que el QLineEdit */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #CCCCCC; /* Borde inferior suave */
-    border-radius:2px; /* Bordes redondeados suaves */
-    padding: 5px 5px; /* Espaciado interno */
-    font-size: 18px; /* Tamaño de fuente más elegante */
-    color: #333333; /* Texto en gris oscuro */
-    transition: all 0.3s ease; /* Transición suave */
-	
-}
-
-/* Efecto al pasar el mouse */
-QComboBox:hover {
-    border-bottom: 2px solid #16344D; /* Engrosa el borde inferior al pasar el mouse */
-    background-color: #f0f0f0; /* Cambio sutil de fondo */
-}
-
-/* Cuando el ComboBox está en foco */
-QComboBox:focus {
-    background-color: #e0e0e0; /* Gris más oscuro cuando está activo */
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-    box-shadow: 0 0 8px rgba(22, 52, 77, 0.3); /* Sombra más suave y elegante */
-    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
-}
-
-/* Personalización del menú desplegable */
-QComboBox QAbstractItemView {
-    background-color: #f5f5f5; /* Fondo gris claro */
-    color: #333333; /* Texto gris oscuro */
-    border-radius: 5px; /* Bordes redondeados suaves */
-    selection-background-color: #16344D; /* Fondo de selección azul elegante */
-    selection-color: white; /* Texto blanco al seleccionar */
-    padding: 5px 0; /* Espaciado interno */
-    min-width: 150px; /* Ancho mínimo para una mejor apariencia */
-}
-
-/* Cambio de color cuando se pasa el mouse por una opción */
-QComboBox QAbstractItemView::item:hover {
-    background-color: #16344D; /* Fondo oscuro al pasar el mouse */
-    color: white; /* Texto blanco */
-}
-
-/* Cambio de color cuando una opción está seleccionada */
-QComboBox QAbstractItemView::item:selected {
-    background-color: #16344D; /* Mismo fondo de selección */
-    color: white; /* Texto en blanco */
-}
-</string>
-            </property>
-            <item>
-             <property name="text">
-              <string>New Item</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>New Item</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>New Item</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>New Item</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label">
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="5">
-           <widget class="QLabel" name="label_10">
-            <property name="styleSheet">
-             <string notr="true">border:none;
-font:18px;</string>
-            </property>
-            <property name="text">
-             <string>Telefono:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="6">
-           <widget class="QLabel" name="label_2">
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <spacer name="verticalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>10</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="11" column="5" alignment="Qt::AlignLeft">
-           <widget class="QPushButton" name="pushButton">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>180</width>
-              <height>45</height>
-             </size>
-            </property>
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton {
+                        </property>
+                        <property name="text">
+                         <string> Actualizar</string>
+                        </property>
+                        <property name="icon">
+                         <iconset>
+                          <normaloff>../../assets/iconos/actualizar-flecha.png</normaloff>../../assets/iconos/actualizar-flecha.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>24</width>
+                          <height>24</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item alignment="Qt::AlignRight">
+                       <widget class="QPushButton" name="pushButton">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>180</width>
+                          <height>45</height>
+                         </size>
+                        </property>
+                        <property name="cursor">
+                         <cursorShape>PointingHandCursor</cursorShape>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton {
     background-color: #16344D; /* Color de fondo */
     border-radius: 5px; /* Bordes redondeados */
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
-    font-size: 18px; /* Tamaño de fuente */
+    font-size: 22px; /* Tamaño de fuente */
     text-align: center; /* Alinea el texto a la izquierda */
 }
 
@@ -366,504 +1022,45 @@ QPushButton::icon {
     padding-right: 5px; /* Espaciado entre el icono y el texto */
 }
 </string>
-            </property>
-            <property name="text">
-             <string>Borrar</string>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>../../assets/iconos/borrar.png</normaloff>../../assets/iconos/borrar.png</iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>24</width>
-              <height>24</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="3">
-           <widget class="QLineEdit" name="LineEditApellidos">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>300</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 18px;
-QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 10px;
-
-	margin-right: 8px; /* Margen a la derecha de 10px */
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <widget class="QLabel" name="label_5">
-            <property name="styleSheet">
-             <string notr="true">border:none;
-font:18px;</string>
-            </property>
-            <property name="text">
-             <string>Regional:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="3">
-           <widget class="QLabel" name="label_6">
-            <property name="styleSheet">
-             <string notr="true">border:none;
-font:18px;</string>
-            </property>
-            <property name="text">
-             <string>Apellidos:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="5">
-           <widget class="QLineEdit" name="LineEditTelefono">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>300</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 18px;
-QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 10px;
-
-	margin-right: 8px; /* Margen a la derecha de 10px */
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="2">
-           <widget class="QLabel" name="label_7">
-            <property name="styleSheet">
-             <string notr="true">border:none;
-font:18px;</string>
-            </property>
-            <property name="text">
-             <string>Nombres:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="4">
-           <widget class="QLineEdit" name="LineEditCorreo">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>300</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 18px;
-QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 10px;
-
-	margin-right: 8px; /* Margen a la derecha de 10px */
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="1">
-           <widget class="QLabel" name="label_11">
-            <property name="styleSheet">
-             <string notr="true">border:none;
-font:18px;</string>
-            </property>
-            <property name="text">
-             <string>Cedula:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="2">
-           <widget class="QLineEdit" name="LineEditNombres">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>300</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 18px;
-QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 10px;
-
-	margin-right: 8px; /* Margen a la derecha de 10px */
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QComboBox" name="ComboBoxRol">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>300</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QComboBox {
-    background-color: #f5f5f5; /* Mismo fondo gris claro que el QLineEdit */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #CCCCCC; /* Borde inferior suave */
-    border-radius:2px; /* Bordes redondeados suaves */
-    padding: 5px 5px; /* Espaciado interno */
-    font-size: 18px; /* Tamaño de fuente más elegante */
-    color: #333333; /* Texto en gris oscuro */
-    transition: all 0.3s ease; /* Transición suave */
-	
-}
-
-/* Efecto al pasar el mouse */
-QComboBox:hover {
-    border-bottom: 2px solid #16344D; /* Engrosa el borde inferior al pasar el mouse */
-    background-color: #f0f0f0; /* Cambio sutil de fondo */
-}
-
-/* Cuando el ComboBox está en foco */
-QComboBox:focus {
-    background-color: #e0e0e0; /* Gris más oscuro cuando está activo */
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-    box-shadow: 0 0 8px rgba(22, 52, 77, 0.3); /* Sombra más suave y elegante */
-    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
-}
-
-/* Personalización del menú desplegable */
-QComboBox QAbstractItemView {
-    background-color: #f5f5f5; /* Fondo gris claro */
-    color: #333333; /* Texto gris oscuro */
-    border-radius: 5px; /* Bordes redondeados suaves */
-    selection-background-color: #16344D; /* Fondo de selección azul elegante */
-    selection-color: white; /* Texto blanco al seleccionar */
-    padding: 5px 0; /* Espaciado interno */
-    min-width: 150px; /* Ancho mínimo para una mejor apariencia */
-}
-
-/* Cambio de color cuando se pasa el mouse por una opción */
-QComboBox QAbstractItemView::item:hover {
-    background-color: #16344D; /* Fondo oscuro al pasar el mouse */
-    color: white; /* Texto blanco */
-}
-
-/* Cambio de color cuando una opción está seleccionada */
-QComboBox QAbstractItemView::item:selected {
-    background-color: #16344D; /* Mismo fondo de selección */
-    color: white; /* Texto en blanco */
-}
-</string>
-            </property>
-            <item>
-             <property name="text">
-              <string>New Item</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>New Item</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>New Item</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>New Item</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>New Item</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="6" column="1">
-           <widget class="QLineEdit" name="LineEditCedula">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>300</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 18px;
-QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 10px;
-
-	margin-right: 8px; /* Margen a la derecha de 10px */
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="1" colspan="5" alignment="Qt::AlignHCenter">
-           <widget class="QTableWidget" name="tableWidget">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>900</width>
-              <height>500</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QTableWidget {
+                        </property>
+                        <property name="text">
+                         <string> Borrar</string>
+                        </property>
+                        <property name="icon">
+                         <iconset>
+                          <normaloff>../../assets/iconos/borrar.png</normaloff>../../assets/iconos/borrar.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>28</width>
+                          <height>28</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="1" column="0" alignment="Qt::AlignHCenter">
+                    <widget class="QTableWidget" name="tableWidget">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>900</width>
+                       <height>600</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QTableWidget {
     background-color: #f5f5f5; /* Fondo gris claro */
     border: 1px solid #CCCCCC; /* Borde suave */
     border-radius: 2px; /* Bordes redondeados */
-    font-size: 12px; /* Tamaño de fuente */
+    font-size: 18px; /* Tamaño de fuente */
     padding: 5px; /* Espaciado interno */
     gridline-color: #DDDDDD; /* Color de las líneas de la cuadrícula */
 }
@@ -912,185 +1109,177 @@ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
     background: none; /* Quitar las flechas */
 }
 </string>
-            </property>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>Nueva fila</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>Nueva fila</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>Nueva fila</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>Nueva fila</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>Nueva fila</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>Nueva fila</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>New Row</string>
-             </property>
-            </row>
-            <column>
-             <property name="text">
-              <string>Rol</string>
-             </property>
-             <property name="textAlignment">
-              <set>AlignCenter</set>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Regional</string>
-             </property>
-             <property name="textAlignment">
-              <set>AlignCenter</set>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Cedula</string>
-             </property>
-             <property name="textAlignment">
-              <set>AlignCenter</set>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Nombres</string>
-             </property>
-             <property name="textAlignment">
-              <set>AlignCenter</set>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Apellidos</string>
-             </property>
-             <property name="textAlignment">
-              <set>AlignCenter</set>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Correo Electronico</string>
-             </property>
-             <property name="textAlignment">
-              <set>AlignCenter</set>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Telefono</string>
-             </property>
-             <property name="textAlignment">
-              <set>AlignCenter</set>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>Estado</string>
-             </property>
-             <property name="textAlignment">
-              <set>AlignCenter</set>
-             </property>
-            </column>
+                     </property>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <row>
+                      <property name="text">
+                       <string>New Row</string>
+                      </property>
+                     </row>
+                     <column>
+                      <property name="text">
+                       <string>Rol</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Regional</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Cédula</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Nombres</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Apellidos</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Correo</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Teléfono</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Estado</string>
+                      </property>
+                     </column>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
            </widget>
-          </item>
-          <item row="10" column="5">
-           <spacer name="verticalSpacer">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
           </item>
          </layout>
         </widget>
@@ -1099,16 +1288,6 @@ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
      </widget>
     </item>
    </layout>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1600</width>
-     <height>26</height>
-    </rect>
-   </property>
   </widget>
  </widget>
  <resources/>
