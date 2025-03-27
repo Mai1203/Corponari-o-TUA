@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1796</width>
-    <height>922</height>
+    <height>908</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -84,7 +84,7 @@ font:20px;</string>
                    <item alignment="Qt::AlignHCenter">
                     <widget class="QLineEdit" name="lineEdit_2">
                      <property name="sizePolicy">
-                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                        <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
@@ -129,12 +129,18 @@ QLineEdit:focus {
 font:20px;</string>
                      </property>
                      <property name="text">
-                      <string>Fecha de Control:</string>
+                      <string>¿Presento PUEAA?</string>
                      </property>
                     </widget>
                    </item>
                    <item alignment="Qt::AlignHCenter">
-                    <widget class="QLineEdit" name="lineEdit_3">
+                    <widget class="QComboBox" name="comboBox">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
                      <property name="minimumSize">
                       <size>
                        <width>500</width>
@@ -142,32 +148,55 @@ font:20px;</string>
                       </size>
                      </property>
                      <property name="styleSheet">
-                      <string notr="true">QLineEdit {
-    background-color: #f5f5f5; /* Fondo gris claro */
+                      <string notr="true">QComboBox {
+    background-color: #f5f5f5; /* Mismo fondo gris claro que el QLineEdit */
     border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font-size: 20px; /* Tamaño de fuente */
-    margin-right: 8px; /* Margen derecho */
-    text-align: center; /* Iniciar centrado */
+    border-bottom: 1px solid #CCCCCC; /* Borde inferior suave */
+    border-radius:2px; /* Bordes redondeados suaves */
+    padding: 5px 5px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente más elegante */
+    color: #333333; /* Texto en gris oscuro */
+    transition: all 0.3s ease; /* Transición suave */
+	
 }
 
-/* Cambia el estilo cuando el cursor pasa por encima */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Resalta el borde inferior */
+/* Efecto al pasar el mouse */
+QComboBox:hover {
+    border-bottom: 2px solid #16344D; /* Engrosa el borde inferior al pasar el mouse */
+    background-color: #f0f0f0; /* Cambio sutil de fondo */
 }
 
-/* Cambia el estilo cuando está enfocado */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Fondo más claro */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
+/* Cuando el ComboBox está en foco */
+QComboBox:focus {
+    background-color: #e0e0e0; /* Gris más oscuro cuando está activo */
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+    box-shadow: 0 0 8px rgba(22, 52, 77, 0.3); /* Sombra más suave y elegante */
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+}
+
+/* Personalización del menú desplegable */
+QComboBox QAbstractItemView {
+    background-color: #f5f5f5; /* Fondo gris claro */
+    color: #333333; /* Texto gris oscuro */
+    border-radius: 5px; /* Bordes redondeados suaves */
+    selection-background-color: #16344D; /* Fondo de selección azul elegante */
+    selection-color: white; /* Texto blanco al seleccionar */
+    padding: 5px 0; /* Espaciado interno */
+    min-width: 150px; /* Ancho mínimo para una mejor apariencia */
+}
+
+/* Cambio de color cuando se pasa el mouse por una opción */
+QComboBox QAbstractItemView::item:hover {
+    background-color: #16344D; /* Fondo oscuro al pasar el mouse */
+    color: white; /* Texto blanco */
+}
+
+/* Cambio de color cuando una opción está seleccionada */
+QComboBox QAbstractItemView::item:selected {
+    background-color: #16344D; /* Mismo fondo de selección */
+    color: white; /* Texto en blanco */
 }
 </string>
-                     </property>
-                     <property name="text">
-                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -178,14 +207,14 @@ QLineEdit:focus {
 font:20px;</string>
                      </property>
                      <property name="text">
-                      <string>Responsable de la visita:</string>
+                      <string>Número de concepto:</string>
                      </property>
                     </widget>
                    </item>
                    <item alignment="Qt::AlignHCenter">
                     <widget class="QLineEdit" name="lineEdit_4">
                      <property name="sizePolicy">
-                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                        <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
@@ -230,12 +259,18 @@ QLineEdit:focus {
 font:20px;</string>
                      </property>
                      <property name="text">
-                      <string>Observaciones:</string>
+                      <string>Fecha de concepto:</string>
                      </property>
                     </widget>
                    </item>
                    <item alignment="Qt::AlignHCenter">
                     <widget class="QLineEdit" name="lineEdit_5">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
                      <property name="minimumSize">
                       <size>
                        <width>500</width>
@@ -287,6 +322,110 @@ QLineEdit:focus {
     border-bottom: 2px solid #16344D;
     background-color: #e0e0e0; /* Gris más claro cuando se escribe */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_5">
+                     <property name="styleSheet">
+                      <string notr="true">border:none;
+font:20px;</string>
+                     </property>
+                     <property name="text">
+                      <string>Número de memorando:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLineEdit" name="lineEdit_3">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>500</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit {
+    background-color: #f5f5f5; /* Fondo gris claro */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font-size: 20px; /* Tamaño de fuente */
+    margin-right: 8px; /* Margen derecho */
+    text-align: center; /* Iniciar centrado */
+}
+
+/* Cambia el estilo cuando el cursor pasa por encima */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Resalta el borde inferior */
+}
+
+/* Cambia el estilo cuando está enfocado */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Fondo más claro */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
+}
+</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_6">
+                     <property name="styleSheet">
+                      <string notr="true">border:none;
+font:20px;</string>
+                     </property>
+                     <property name="text">
+                      <string>Fecha de memorando:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLineEdit" name="lineEdit_6">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>500</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit {
+    background-color: #f5f5f5; /* Fondo gris claro */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font-size: 20px; /* Tamaño de fuente */
+    margin-right: 8px; /* Margen derecho */
+    text-align: center; /* Iniciar centrado */
+}
+
+/* Cambia el estilo cuando el cursor pasa por encima */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Resalta el borde inferior */
+}
+
+/* Cambia el estilo cuando está enfocado */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Fondo más claro */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
 }
 </string>
                      </property>
@@ -862,17 +1001,27 @@ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
                      </column>
                      <column>
                       <property name="text">
-                       <string>Fecha</string>
+                       <string>PUEAA</string>
                       </property>
                      </column>
                      <column>
                       <property name="text">
-                       <string>Responsable</string>
+                       <string>Concepto</string>
                       </property>
                      </column>
                      <column>
                       <property name="text">
-                       <string>Observaciones</string>
+                       <string>Fecha de cooncepto</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Nueva columna</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Fecha de memorando</string>
                       </property>
                      </column>
                     </widget>
