@@ -36,12 +36,13 @@ class MainWindow(QMainWindow):
         layout.addWidget(self.stacked_widget)
 
         # Instanciar las vistas
-        self.Login = Login_View(self)  # Pasar la referencia de MainWindow a Login_View
-        self.MainApp = MainApp(self)  # Pasar la referencia de MainWindow a MainApp
+        self.Login = Login_View()  # Pasar la referencia de MainWindow a Login_View
+        self.MainApp = MainApp()  # Pasar la referencia de MainWindow a MainApp
 
         # Agregar vistas al QStackedWidget
-        self.stacked_widget.addWidget(self.Login)  # Índice 0 (Login)
-        self.stacked_widget.addWidget(self.MainApp)  # Índice 1 (MainApp)
+        
+        self.stacked_widget.addWidget(self.Login)
+        self.stacked_widget.addWidget(self.MainApp)
 
 
 if __name__ == "__main__":
